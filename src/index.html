@@ -8,10 +8,11 @@
       <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
       <link rel="stylesheet" href="css/font.css" />
       <link rel="stylesheet" href="css/slick.css" />
+      <link rel="stylesheet" href="css/animate.css" />
       <link rel="stylesheet" href="css/style.min.css" />
    </head>
    <body>
-      <section class="promo">
+      <section id="up" class="promo">
          <div class="container">
             <header class="header">
                <a href="#" class="header__logo">
@@ -74,7 +75,7 @@
                   <img
                      src="icons/advantages/cup.png"
                      alt="cup"
-                     class="advantages__icon"
+                     class="advantages__icon advantages__icon_animated1"
                   />
                   <div class="advantages__subtitle">Делимся опытом</div>
                   <div class="advantages__descr">
@@ -87,7 +88,7 @@
                   <img
                      src="icons/advantages/heart.png"
                      alt="heart"
-                     class="advantages__icon"
+                     class="advantages__icon advantages__icon_animated2"
                   />
                   <div class="advantages__subtitle">Заботимся о здоровье</div>
                   <div class="advantages__descr">
@@ -100,7 +101,7 @@
                   <img
                      src="icons/advantages/shoe.png"
                      alt="shoe"
-                     class="advantages__icon"
+                     class="advantages__icon advantages__icon_animated3"
                   />
                   <div class="advantages__subtitle">Учим бегать</div>
                   <div class="advantages__descr">
@@ -611,7 +612,12 @@
       <section class="feed">
          <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="feed__item">
+            <div
+               class="feed__item fadeInUp wow"
+               data-wow-duration="2s"
+               data-wow-delay="1s"
+            >
+               <!-- fadeInUp анимация из _animations.css, wow из wow.min.js-->
                <img
                   src="img/feed_1.png"
                   alt="Ирина Иванченко"
@@ -632,7 +638,11 @@
                   </div>
                </div>
             </div>
-            <div class="feed__item">
+            <div
+               class="feed__item fadeInUp wow"
+               data-wow-duration="2s"
+               data-wow-delay="1s"
+            >
                <img
                   src="img/feed_2.png"
                   alt="Иван Сёмочкин"
@@ -653,7 +663,11 @@
                   </div>
                </div>
             </div>
-            <div class="feed__item">
+            <div
+               class="feed__item fadeInUp wow"
+               data-wow-duration="2s"
+               data-wow-delay="1s"
+            >
                <img src="img/feed_3.png" alt="Юлия Дашкина" class="feed__img" />
                <div class="feed__text">
                   <div class="feed__subtitle">Юлия Дашкина</div>
@@ -749,11 +763,14 @@
          </div>
       </div>
 
+      <a href="#up" class="pageup"><img src="icons/up.svg" alt="up" /></a>
+
       <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script src="js/slick.min.js"></script>
       <script src="js/jquery.validate.min.js"></script>
       <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wow.min.js"></script>
       <script src="js/script.js"></script>
    </body>
 </html>
