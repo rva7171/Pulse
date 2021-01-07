@@ -22,12 +22,12 @@
 }
 @keyframes shoe {
    from {
-      transform: rotate(0deg);
+      transform: rotate(-30deg);
    }
    50% {
       transform: rotate(60deg);
    }
    to {
-      transform: rotate(0deg);
+      transform: rotate(-30deg);
    }
 }
