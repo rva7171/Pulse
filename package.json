@@ -13,6 +13,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.2.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.1.0"
   },
@@ -22,5 +23,8 @@
     "maintained node versions",
     "not dead"
   ],
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
 }
